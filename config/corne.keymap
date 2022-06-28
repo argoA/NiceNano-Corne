@@ -10,12 +10,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        new_combo {
-            bindings = <&kp>;
-            key-positions = <12 11>;
-            layers = <4>;
-        };
     };
 
     macros {
