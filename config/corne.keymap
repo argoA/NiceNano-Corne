@@ -13,12 +13,6 @@
     };
 
     macros {
-        print_screen: print_screen {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp PRINTSCREEN>;
-        };
     };
 
     keymap {
@@ -80,9 +74,9 @@
 
         Layer__4 {
             bindings = <
-      &kp ESC   &kp F1   &kp F2   &kp F3   &kp F4     &kp F5     &trans  &trans  &trans  &trans  &trans     &kp DELETE
- &kp CAPSLOCK   &kp F6   &kp F7   &kp F8   &kp F9    &kp F10     &trans  &trans  &trans  &trans  &trans         &trans
-       &trans  &kp F11  &kp F12  &kp F13  &kp F14    &kp F15     &trans  &trans  &trans  &trans  &trans  &print_screen
+      &kp ESC   &kp F1   &kp F2   &kp F3   &kp F4     &kp F5     &trans  &trans  &trans  &trans  &trans             &kp DELETE
+ &kp CAPSLOCK   &kp F6   &kp F7   &kp F8   &kp F9    &kp F10     &trans  &trans  &trans  &trans  &trans                 &trans
+       &trans  &kp F11  &kp F12  &kp F13  &kp F14    &kp F15     &trans  &trans  &trans  &trans  &trans  &mt LCTRL PRINTSCREEN
                                   &trans   &trans  &kp SPACE  &kp ENTER  &trans  &trans
             >;
         };
