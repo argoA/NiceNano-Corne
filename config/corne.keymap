@@ -8,12 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-    };
-
-    macros {
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -87,6 +82,15 @@
 &sk LCTRL  &kp A  &kp R  &kp S         &kp T  &kp G      &kp M      &kp N  &kp E          &kp I       &kp O          &kp SINGLE_QUOTE
 &sk LSHFT  &kp Z  &kp X  &kp C         &kp D  &kp V      &kp K      &kp H  &kp COMMA      &kp PERIOD  &kp SLASH      &sl 4
                          &kp LEFT_GUI  &mo 2  &kp SPACE  &kp ENTER  &mo 1  &kp RIGHT_ALT
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
