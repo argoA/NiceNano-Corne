@@ -13,7 +13,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        QWERTY {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -60,10 +60,10 @@
 
         Mods {
             bindings = <
-&to 5   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans        &trans       &trans  &trans
+&kp LCTRL     &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp END  &kp LS(HOME)  &kp LS(TAB)  &trans  &trans
+&kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans        &trans       &trans  &trans
+                              &trans  &trans  &to 0   &to 5    &trans   &trans
             >;
         };
 
@@ -82,15 +82,6 @@
 &sk LCTRL  &kp A  &kp R  &kp S         &kp T  &kp G      &kp M      &kp N  &kp E          &kp I       &kp O          &kp SINGLE_QUOTE
 &sk LSHFT  &kp Z  &kp X  &kp C         &kp D  &kp V      &kp K      &kp H  &kp COMMA      &kp PERIOD  &kp SLASH      &sl 4
                          &kp LEFT_GUI  &mo 2  &kp SPACE  &kp ENTER  &mo 1  &kp RIGHT_ALT
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
