@@ -80,7 +80,7 @@
             bindings = <
 &kp LEFT_GUI  &kp LG(GRAVE)  &trans  &trans  &trans  &trans  &trans      &trans             &trans           &trans          &trans  &trans
 &kp LCTRL     &trans         &trans  &trans  &trans  &trans  &kp TAB     &kp END            &kp LS(HOME)     &kp LS(TAB)     &trans  &trans
-&kp LEFT_ALT  &trans         &trans  &trans  &trans  &trans  &kp C_NEXT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_PREVIOUS  &trans  &trans
+&kp LEFT_ALT  &trans         &trans  &trans  &trans  &trans  &kp K_NEXT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_PREVIOUS  &trans  &trans
                                      &trans  &trans  &tog 0  &tog 5      &trans             &trans
             >;
         };
