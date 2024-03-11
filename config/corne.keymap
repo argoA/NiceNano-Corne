@@ -69,10 +69,10 @@
             //                    | GUI |     | SPC |   | ENT |BOTH | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT    &kp HASH      &kp DLLR  &kp PRCNT  &trans   &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &kp BSPC
-&sk LCTRL  &kp CARET  &kp AMPS  &kp ASTERISK  &kp LPAR  &kp RPAR   &trans   &kp PLUS        &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp FSLH
-&sk LSHFT  &trans     &trans    &trans        &trans    &trans     &trans   &kp MINUS       &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp PERIOD
-                                &kp LGUI      &trans    &kp SPACE  &kp RET  &mo 3           &kp KP_N0
+&kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT  &trans   &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &kp BSPC
+&sk LCTRL  &kp CARET     &kp AMPS      &kp ASTERISK  &kp LPAR      &kp RPAR   &trans   &kp PLUS        &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp FSLH
+&sk LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &trans   &kp MINUS       &kp KP_N1        &kp KP_N2  &kp KP_N3  &kp PERIOD
+                                       &kp LGUI      &trans        &kp SPACE  &kp RET  &mo 3           &kp KP_N0
             >;
         };
 
