@@ -9,7 +9,8 @@
 
 &mt {
     flavor = "tap-preferred";
-    require-prior-idle-ms = <100>;
+    require-prior-idle-ms = <125>;
+    quick-tap-ms = <200>;
 };
 
 / {
