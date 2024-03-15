@@ -9,30 +9,12 @@
 
 &mt {
     flavor = "tap-preferred";
-    require-prior-idle-ms = <100>;
-    quick-tap-ms = <200>;
+    require-prior-idle-ms = <150>;
+    quick-tap-ms = <175>;
 };
 
 / {
     combos { compatible = "zmk,combos"; };
-
-    behaviors {
-        shift_caps: shift_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
-        };
-
-        shift_caps_sticky: shift_caps_sticky {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SHIFT_CAPS_STICKY";
-            bindings = <&shift_caps>;
-            #binding-cells = <1>;
-            quick-release;
-            release-after-ms = <1000>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
