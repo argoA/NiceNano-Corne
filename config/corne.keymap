@@ -34,7 +34,7 @@
             >;
         };
 
-        lower_layer {
+        right_thumb {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -49,7 +49,7 @@
             >;
         };
 
-        raise_layer {
+        left_thumb {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -64,7 +64,7 @@
             >;
         };
 
-        Mods {
+        both_thumbs {
             bindings = <
 &kp LEFT_GUI  &kp LG(GRAVE)  &trans  &trans  &trans  &trans  &trans      &trans             &trans           &trans          &trans  &trans
 &kp LCTRL     &trans         &trans  &trans  &trans  &trans  &kp TAB     &kp END            &kp LS(HOME)     &kp LS(TAB)     &trans  &trans
@@ -73,7 +73,7 @@
             >;
         };
 
-        One_Times {
+        one_times {
             bindings = <
 &kp ESC       &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &trans     &trans  &trans  &trans  &trans  &kp DELETE
 &kp CAPSLOCK  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &trans     &trans  &trans  &trans  &trans  &trans
