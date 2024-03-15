@@ -27,9 +27,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp E        &kp R             &kp T      &kp Y    &kp U              &kp I        &kp O            &kp P                &kp BSPC
-&trans      &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI   &kp SQT
-&trans      &kp Z           &kp X           &kp C        &kp V             &kp B      &kp N    &kp M              &kp COMMA    &kp DOT          &mt BACKSLASH SLASH  &sl 0
+&kp TAB     &kp Q           &kp W           &kp E        &kp R             &kp T      &kp Y    &kp U              &kp I        &kp O            &kp P                &kp BSPC
+&kp ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G      &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI   &kp SQT
+&trans      &kp Z           &kp X           &kp C        &kp V             &kp B      &kp N    &kp M              &kp COMMA    &kp DOT          &mt BACKSLASH SLASH  &trans
                                             &trans       &sl 2             &kp SPACE  &kp RET  &sl 1              &trans
             >;
         };
@@ -42,10 +42,10 @@
             //                    | GUI |BOTH | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans          &trans              &trans                      &trans                           &trans     &trans    &trans         &trans     &trans       &trans  &trans
-&trans  &mt LGUI MINUS  &mt LEFT_ALT EQUAL  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_SHIFT LEFT_PARENTHESIS  &trans     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &trans  &trans
-&trans  &trans          &kp PERCENT         &kp LEFT_BRACKET            &kp RIGHT_BRACKET                &trans     &kp TAB   &kp PAGE_DOWN  &kp PG_UP  &kp LS(TAB)  &trans  &kp BACKSLASH
-                                            &kp LGUI                    &sl 3                            &kp SPACE  &kp RET   &trans         &kp RALT
+&trans  &trans          &trans              &trans                      &trans                            &trans     &trans    &trans         &trans     &trans       &trans  &kp DEL
+&trans  &mt LGUI MINUS  &mt LEFT_ALT EQUAL  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_SHIFT RIGHT_PARENTHESIS  &trans     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &trans  &trans
+&trans  &trans          &kp PERCENT         &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &trans     &kp TAB   &kp PAGE_DOWN  &kp PG_UP  &kp LS(TAB)  &trans  &trans
+                                            &kp LGUI                    &sl 3                             &kp SPACE  &kp RET   &trans         &kp RALT
             >;
         };
 
@@ -66,10 +66,10 @@
 
         both_thumbs {
             bindings = <
-&kp LG(GRAVE)  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &trans      &trans             &trans           &trans          &trans  &trans
-&kp CAPSLOCK   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans      &trans             &trans           &trans          &trans  &trans
-&trans         &trans  &trans  &trans  &trans  &trans   &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &trans  &trans
-                               &trans  &trans  &trans   &trans      &trans             &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4         &kp F5  &kp F6      &kp F7             &kp F8           &kp F9          &kp F10  &trans
+&trans  &trans  &trans  &trans  &kp CAPSLOCK   &trans  &trans      &trans             &trans           &trans          &trans   &trans
+&trans  &trans  &trans  &trans  &kp LG(GRAVE)  &trans  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &trans   &trans
+                        &trans  &trans         &trans  &trans      &trans             &trans
             >;
         };
     };
