@@ -15,6 +15,8 @@
 
 &sk { release-after-ms = <500>; };
 
+&sl { release-after-ms = <500>; };
+
 / {
     combos { compatible = "zmk,combos"; };
 
@@ -44,9 +46,9 @@
             //                    | GUI |BOTH | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans          &trans              &trans                      &trans                            &trans     &trans    &trans         &trans     &trans       &trans  &kp DEL
-&trans  &mt LGUI MINUS  &mt LEFT_ALT EQUAL  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_SHIFT RIGHT_PARENTHESIS  &trans     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &trans  &trans
-&trans  &trans          &kp PERCENT         &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &trans     &kp TAB   &kp PAGE_DOWN  &kp PG_UP  &kp LS(TAB)  &trans  &trans
+&trans  &trans          &trans              &kp GRAVE                   &trans                            &trans     &trans    &trans         &trans     &trans     &trans  &trans
+&trans  &mt LGUI MINUS  &mt LEFT_ALT EQUAL  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_SHIFT RIGHT_PARENTHESIS  &trans     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans          &kp PERCENT         &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &trans     &trans    &kp PAGE_DOWN  &kp PG_UP  &trans     &trans  &trans
                                             &kp LGUI                    &sl 3                             &kp SPACE  &kp RET   &trans         &kp RALT
             >;
         };
@@ -59,10 +61,10 @@
             //                    | GUI |     | SPC |   | ENT |BOTH | ALT |
 
             bindings = <
-&kp GRAVE  &trans        &trans        &trans        &trans          &trans     &trans   &kp ASTERISK  &kp N7        &kp N8  &kp N9  &kp BSPC
-&trans     &kp LEFT_GUI  &kp LALT      &sk LCTRL     &sk LEFT_SHIFT  &trans     &trans   &kp PLUS      &kp N4        &kp N5  &kp N6  &kp FSLH
-&trans     &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5     &trans   &kp MINUS     &kp NUMBER_1  &kp N2  &kp N3  &kp PERIOD
-                                       &trans        &trans          &kp SPACE  &kp RET  &sl 3         &kp N0
+&trans  &trans        &trans        &trans        &trans          &trans     &trans   &kp ASTERISK  &kp N7        &kp N8  &kp N9  &trans
+&trans  &kp LEFT_GUI  &kp LALT      &sk LCTRL     &sk LEFT_SHIFT  &trans     &trans   &kp PLUS      &kp N4        &kp N5  &kp N6  &kp FSLH
+&trans  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5     &trans   &kp MINUS     &kp NUMBER_1  &kp N2  &kp N3  &kp PERIOD
+                                    &trans        &trans          &kp SPACE  &kp RET  &sl 3         &kp N0
             >;
         };
 
