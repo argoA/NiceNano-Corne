@@ -47,7 +47,7 @@
 
             bindings = <
 &trans  &trans          &trans              &kp GRAVE                   &trans                            &trans     &trans    &trans         &trans     &trans     &trans  &trans
-&trans  &mt LGUI MINUS  &mt LEFT_ALT EQUAL  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_SHIFT RIGHT_PARENTHESIS  &trans     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&trans  &mt LGUI EQUAL  &mt LEFT_ALT MINUS  &mt LCTRL LEFT_PARENTHESIS  &mt LEFT_SHIFT RIGHT_PARENTHESIS  &trans     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
 &trans  &trans          &kp PERCENT         &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &trans     &trans    &kp PAGE_DOWN  &kp PG_UP  &trans     &trans  &trans
                                             &kp LGUI                    &sl 3                             &kp SPACE  &kp RET   &trans         &kp RALT
             >;
